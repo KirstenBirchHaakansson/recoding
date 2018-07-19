@@ -9,8 +9,7 @@ vslLen_to_RDB_vslLenCat <- function(x, y){
 
   y <- enquo(y)
 
-  x <- mutate(x, vslLenCat = ifelse(is.na(!!y), "<10",
-                                    ifelse(!!y >= 0 & !!y < 10, "<10",
+  x <- mutate(x, vslLenCat = ifelse(!!y >= 0 & !!y < 10, "<10",
                                            ifelse(!!y >= 10 & !!y < 12, "10-<12",
                                                   ifelse(!!y >= 12 & !!y < 18, "12-<18",
                                                          ifelse(!!y >= 18 & !!y < 24, "18-<24",
