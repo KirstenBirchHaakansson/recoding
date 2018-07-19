@@ -14,7 +14,7 @@ vslLen_to_RDB_vslLenCat <- function(x, y){
                                                   ifelse(!!y >= 12 & !!y < 18, "12-<18",
                                                          ifelse(!!y >= 18 & !!y < 24, "18-<24",
                                                                 ifelse(!!y >= 24 & !!y < 40, "24-<40",
-                                                                       ifelse(!!y >= 40, ">40", NA))))))))
+                                                                       ifelse(!!y >= 40, ">40", NA)))))))
   x
 }
 
