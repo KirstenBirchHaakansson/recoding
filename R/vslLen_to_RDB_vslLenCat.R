@@ -1,5 +1,4 @@
 
-#vslLen_to_RDB_vslLenCat###########################################################################################################
 #Function for adding RBD vessel length categories (vslLenCat) to a dataframe
 #- input is a dataframe (x) with a variable containing vessel length in meters (vslLen) (y) - the latter should be numeric
 
