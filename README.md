@@ -1,3 +1,3 @@
 # recoding
-Recodes variables for RDB and other formats
+Recodes commercial fishery statics variables for RDB and other formats
 
