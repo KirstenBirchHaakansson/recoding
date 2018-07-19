@@ -19,13 +19,3 @@ vslLen_to_RDB_vslLenCat <- function(x, y){
   x
 }
 
-# #Test vslLenCat
-#
-# dfad <- readRDS("Q:/dfad/data/Data/udvidet_data/dfad_udvidet2016.RDS")
-# x <- subset(dfad, hel != 0)[, c("oal ", "hel")]
-# x$oal <- as.numeric(x$oal)
-#
-# test_vslLenCat <- DFAD_vslLen_to_RDB_vslLenCat(x, oal)
-#
-# test_vslLenCat_sum <- summarise(group_by(test_vslLenCat, oal, vslLenCat), hel = sum(hel))
-# test_vslLenCat_mis <- subset(test_vslLenCat, is.na(vslLenCat))
