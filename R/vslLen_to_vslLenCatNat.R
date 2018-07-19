@@ -1,4 +1,4 @@
-#vslLen_to_RDB_vslLenCatNat###################################################################################################
+
 #Function for adding national vessel length categories (vslLenCatNat) to a dataframe
 #- input is a dataframe (x) with a variable containing vessel length in meters (vslLen) (y) - the latter should be numeric
 
