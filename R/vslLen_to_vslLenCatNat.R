@@ -2,7 +2,7 @@
 #Function for adding national vessel length categories (vslLenCatNat) to a dataframe
 #- input is a dataframe (x) with a variable containing vessel length in meters (vslLen) (y) - the latter should be numeric
 
-vslLen_to_RDB_vslLenCatNat <- function(x, y) {
+vslLen_to_vslLenCatNat <- function(x, y) {
 
   library(dplyr)
 
