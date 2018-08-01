@@ -1,19 +1,19 @@
 
 #Function for adding RBD vessel length categories (vslLenCat) to a dataframe
-#- input is a dataframe (x) with a variable containing vessel length in meters (vslLen) (y) - the latter should be numeric
+#- input is a dataframe (df) with a variable containing vessel length in meters (vslLen) - the latter should be numeric
 
-vslLen_to_RDB_vslLenCat <- function(x, y){
+vslLen_to_RDB_vslLenCat <- function(df, vslLen){
 
   library(dplyr)
 
-  y <- enquo(y)
+  vslLen <- enquo(vslLen)
 
-  x <- mutate(x, vslLenCat = ifelse(!!y >= 0 & !!y < 10, "<10",
-                                           ifelse(!!y >= 10 & !!y < 12, "10-<12",
-                                                  ifelse(!!y >= 12 & !!y < 18, "12-<18",
-                                                         ifelse(!!y >= 18 & !!y < 24, "18-<24",
-                                                                ifelse(!!y >= 24 & !!y < 40, "24-<40",
-                                                                       ifelse(!!y >= 40, ">40", NA)))))))
-  x
+  df <- mutate(df, vslLenCat = ifelse(!!vslLen >= 0 & !!vslLen < 10, "<10",
+                                           ifelse(!!vslLen >= 10 & !!vslLen < 12, "10-<12",
+                                                  ifelse(!!vslLen >= 12 & !!vslLen < 18, "12-<18",
+                                                         ifelse(!!vslLen >= 18 & !!vslLen < 24, "18-<24",
+                                                                ifelse(!!vslLen >= 24 & !!vslLen < 40, "24-<40",
+                                                                       ifelse(!!vslLen >= 40, ">40", NA)))))))
+  df
 }
 
