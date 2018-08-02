@@ -1,9 +1,9 @@
 
 
-update_code_lists <- function() {
+Update_code_lists <- function() {
 
-  library(stringr)
-  library(haven)
+  require(stringr)
+  require(haven)
 
   #location codes for FST, Denmark
 
