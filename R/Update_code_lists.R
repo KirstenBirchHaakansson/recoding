@@ -1,6 +1,7 @@
 
+#This function updates the code lists
 
-Update_code_lists <- function() {
+update_code_lists <- function() {
 
   require(stringr)
   require(haven)
@@ -23,7 +24,7 @@ Update_code_lists <- function() {
   l_FST_species_codes <- species[, c("wormsLatin", "start", "art", "X_A_CODE", "SSOAPAphiaId", "ISSCAAP")]
   devtools::use_data(l_FST_species_codes, overwrite = T, internal = FALSE)
 
- }
+}
 
 
 #Update_code_lists()
