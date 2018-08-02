@@ -1,6 +1,6 @@
 
 
-Update_code_lists <- function() {
+update_code_lists <- function() {
 
   library(stringr)
   library(haven)
